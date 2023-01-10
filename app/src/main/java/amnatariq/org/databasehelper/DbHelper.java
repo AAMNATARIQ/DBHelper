@@ -20,5 +20,11 @@ public class DbHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
+        onCreate(sqLiteDatabase);
+    }
+
+    public void addContact(String name, int rollNumber, boolean isEnroll){
+        SQLiteDatabase db = this.getWriteableDatabase();
+        db.insert();
     }
 }
